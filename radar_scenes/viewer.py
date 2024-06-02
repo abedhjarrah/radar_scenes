@@ -228,28 +228,28 @@ class MainWindow(QtWidgets.QMainWindow):
         self.timeline_spinbox = QtWidgets.QSpinBox()
         self.timeline_spinbox.setMaximum(10000)
         self.timeline_spinbox.setSizePolicy(
-            QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed))
+            QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Fixed))
         self.timeline_label = QtWidgets.QLabel()
         self.timeline_label.setText("Current Frame:")
         self.timeline_label.setSizePolicy(
-            QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed))
+            QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Fixed))
         self.prev_frames_spinbox = QtWidgets.QSpinBox()
         self.prev_frames_spinbox.setSizePolicy(
-            QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed))
+            QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Fixed))
         self.prev_frames_spinbox.setMaximum(30)
         self.prev_frames_label = QtWidgets.QLabel()
         self.prev_frames_label.setText("Show Previous Frames:")
         self.prev_frames_label.setSizePolicy(
-            QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed))
+            QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Fixed))
         self.future_frames_spinbox = QtWidgets.QSpinBox()
         self.future_frames_spinbox.setSizePolicy(
-            QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed))
+            QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Fixed))
         self.future_frames_spinbox.setMaximum(30)
         self.future_frames_spinbox.setValue(4)
         self.future_frames_label = QtWidgets.QLabel()
         self.future_frames_label.setText("Show Future Frames:")
         self.future_frames_label.setSizePolicy(
-            QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed))
+            QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Fixed))
 
         self.timeline_grid_layout.addWidget(self.timeline_slider, 0, 0, 1, 8)
         self.timeline_grid_layout.addWidget(self.timeline_label, 1, 1)
